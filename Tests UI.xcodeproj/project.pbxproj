@@ -13,6 +13,7 @@
 		D063AC14234AA34600B53C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D063AC12234AA34600B53C8D /* Main.storyboard */; };
 		D063AC16234AA34C00B53C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D063AC15234AA34C00B53C8D /* Assets.xcassets */; };
 		D063AC19234AA34C00B53C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D063AC17234AA34C00B53C8D /* LaunchScreen.storyboard */; };
+		D063AC21234C243900B53C8D /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D063AC20234C243900B53C8D /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D063AC15234AA34C00B53C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D063AC18234AA34C00B53C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D063AC1A234AA34C00B53C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D063AC20234C243900B53C8D /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D063AC0C234AA34600B53C8D /* AppDelegate.swift */,
 				D063AC0E234AA34600B53C8D /* SceneDelegate.swift */,
 				D063AC10234AA34600B53C8D /* ViewController.swift */,
+				D063AC20234C243900B53C8D /* Timer.swift */,
 				D063AC12234AA34600B53C8D /* Main.storyboard */,
 				D063AC15234AA34C00B53C8D /* Assets.xcassets */,
 				D063AC17234AA34C00B53C8D /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				D063AC11234AA34600B53C8D /* ViewController.swift in Sources */,
 				D063AC0D234AA34600B53C8D /* AppDelegate.swift in Sources */,
 				D063AC0F234AA34600B53C8D /* SceneDelegate.swift in Sources */,
+				D063AC21234C243900B53C8D /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6257XTCRBF;
 				INFOPLIST_FILE = "Tests UI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6257XTCRBF;
 				INFOPLIST_FILE = "Tests UI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
