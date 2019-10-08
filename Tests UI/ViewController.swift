@@ -74,16 +74,16 @@ class ViewController: UIViewController {
         time += 1
         timeLabel.text = "\(time)"
         if time == 30 {
+            clickButton.isEnabled = false
+            timer.invalidate()
             time = 0
             buttonResetWasPressed()
-            timer.invalidate()
-            clickButton.isEnabled = false
             label.text = "Hit The Start Button to Try Again!"
         }
     }
     
     func createTimeLabelView() {
-        timeLabel.textColor = UIColor.black
+        timeLabel.textColor = UIColor.label
         timeLabel.frame = CGRect(origin: CGPoint(x: 120, y: 200), size: CGSize(width: 300, height: 100))
         timeLabel.text = ""
         timeLabel.font = timeLabel.font.withSize(50)
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     }
     
     func createTopScoreLabelView() {
-        topScoreLabel.textColor = UIColor.black
+        topScoreLabel.textColor = UIColor.label
         topScoreLabel.frame = CGRect(origin: CGPoint(x: 50, y: 50), size: CGSize(width: 300, height: 50))
         topScoreLabel.text = "Top Score"
         self.view.addSubview(topScoreLabel)
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
     
     func createLabelView() {
         
-        label.textColor = UIColor.black
+        label.textColor = UIColor.label
         label.frame = CGRect(origin: CGPoint(x: 75, y: 300), size: CGSize(width: 300, height: 50))
         label.text = "Tap The Blue Button To Start"
         self.view.addSubview(label)
