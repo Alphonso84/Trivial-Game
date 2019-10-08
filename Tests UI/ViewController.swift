@@ -84,25 +84,35 @@ class ViewController: UIViewController {
     
     func createTimeLabelView() {
         timeLabel.textColor = UIColor.label
-        timeLabel.frame = CGRect(origin: CGPoint(x: 120, y: 200), size: CGSize(width: 300, height: 100))
+        self.view.addSubview(timeLabel)
+        timeLabel.translatesAutoresizingMaskIntoConstraints = false
+        timeLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        timeLabel.centerYAnchor.constraint(equalTo: self.view.topAnchor, constant: 200).isActive = true
+        timeLabel.bottomAnchor.constraint(equalToSystemSpacingBelow: self.view.bottomAnchor, multiplier: 200).isActive = true
         timeLabel.text = ""
         timeLabel.font = timeLabel.font.withSize(50)
-        self.view.addSubview(timeLabel)
+        
     }
     
     func createTopScoreLabelView() {
         topScoreLabel.textColor = UIColor.label
-        topScoreLabel.frame = CGRect(origin: CGPoint(x: 50, y: 50), size: CGSize(width: 300, height: 50))
-        topScoreLabel.text = "Top Score"
         self.view.addSubview(topScoreLabel)
+        topScoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        topScoreLabel.centerXAnchor.constraint(equalTo: self.view.leftAnchor, constant: 70).isActive = true
+        topScoreLabel.centerYAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
+        topScoreLabel.bottomAnchor.constraint(equalToSystemSpacingBelow: self.view.bottomAnchor, multiplier: 350).isActive = true
+        topScoreLabel.text = "Top Score"
+        
     }
     
     func createLabelView() {
         
         label.textColor = UIColor.label
-        label.frame = CGRect(origin: CGPoint(x: 75, y: 300), size: CGSize(width: 300, height: 50))
-        label.text = "Tap The Blue Button To Start"
         self.view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: self.view.topAnchor, constant: 300).isActive = true
+        label.text = "Tap The Blue Button To Start"
         
     }
     
